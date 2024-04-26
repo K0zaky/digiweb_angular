@@ -14,7 +14,7 @@ ul {
   padding: 0;
   margin-top: 15px;
   justify-content: center;
-  max-height: 450px;
+  max-height: 75%;
   overflow-y: auto;
 
 }
