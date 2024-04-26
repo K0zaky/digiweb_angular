@@ -1,0 +1,16 @@
+<div class="container mt-5 mx-auto px-4">
+  <form [formGroup]="userForm" (ngSubmit)="login()" class="mb-4">
+    <div class="mb-3">
+      <label for="username" class="block mb-1">User:</label>
+      <input type="text" formControlName="username" id="username" class="form-input border border-gray-300 w-full">
+    </div>
+    <div class="mb-3">
+      <label for="password" class="block mb-1">Password:</label>
+      <input type="password" formControlName="password" id="password" class="form-input border border-gray-300 w-full">
+    </div>
+    <div class="mb-3">
+      <button type="submit" class="bg-blue-500 text-white font-bold py-2 px-4 rounded">Login</button>
+    </div>
+  </form>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Digimon_Logo.svg/1200px-Digimon_Logo.svg.png" alt="digimon logo" class="mx-auto"> <!-- Añadido mx-auto para centrar horizontalmente -->
+</div>

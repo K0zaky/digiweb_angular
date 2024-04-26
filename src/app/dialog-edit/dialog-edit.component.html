@@ -1,0 +1,20 @@
+<div class="container mt-5 mx-auto px-4">
+  <form [formGroup]="digimonForm" (ngSubmit)="anadirDigimon()" class="mb-4">
+    <div class="form-group mb-3">
+      <label for="name" class="block mb-1">Name:</label>
+      <input type="text" formControlName="name" id="name" class="form-input border w-full">
+    </div>
+    <div class="form-group mb-3">
+      <label for="level" class="block mb-1">Level:</label>
+      <input type="text" formControlName="level" id="level" class="form-input border w-full">
+    </div>
+    <div class="form-group mb-3">
+      <label for="image" class="block mb-1">Image:</label>
+      <input type="text" formControlName="image" id="image" class="form-input border w-full">
+    </div>
+    <div class="form-group mb-4">
+      <button type="submit" class="bg-green-500 text-white font-bold py-2 px-4 rounded mr-2">Save changes</button>
+      <button type="button" (click)="cancel()" class="bg-red-500 text-white font-bold py-2 px-4 rounded">Cancel</button>
+    </div>
+  </form>
+</div>

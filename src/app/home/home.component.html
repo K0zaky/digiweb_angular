@@ -1,0 +1,61 @@
+<div class="search-container">
+  <input type="text" [(ngModel)]="searchTerm" (input)="searchDigimon()" placeholder="Buscar Digimon" style="width: 100%; padding: 10px;">
+</div>
+
+
+<mat-dialog-actions class="flex justify-center">
+  <button mat-raised-button class="bg-yellow-100 hover:bg-yellow-300 text-white font-bold py-2 px-4 rounded" (click)="anadirDigimon()">Add Digimon</button>
+</mat-dialog-actions>
+
+
+
+<ul #listContainer class="flex flex-wrap justify-center">
+  <li *ngFor="let digimon of filteredDigimons" class="mb-3 flex-grow w-1/5 px-4">
+    <div class="flex flex-col items-center">
+      <div class="mb-3">
+        <a [routerLink]="['/detalles', digimon.name]">
+          <img [src]="digimon.img" alt="Digimon Image" class="w-full">
+        </a>
+      </div>
+      <h1 class="text-xl">{{digimon.name}}</h1>
+      <h3 class="text-lg">{{digimon.level}}</h3>
+      <div class="flex justify-center mt-3">
+        <button (click)="editDigimon(digimon)" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mr-2">Editar</button>
+        <button (click)="deleteDigimon(digimon)" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Eliminar</button>
+      </div>
+    </div>
+  </li>
+</ul>
+
+
+
+
+<button mat-raised-button class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded absolute bottom-4 left-4" (click)="scrollToTop()">Volver arriba</button>
+
+
+<button mat-raised-button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded absolute bottom-4 right-4" (click)="logout()">Logout</button>
+
+<!--
+<table datatable class="row-border hover mx-auto">
+  <thead>
+    <tr *ngFor="let digimon of data" class="mb-3">
+      <td class="pr-4">
+        <div class="flex items-center">
+          <div class="text-xl">{{digimon.name}}</div>
+          <img [src]="digimon.img" alt="Digimon Image" class="w-full ml-2">
+        </div>
+      </td>
+      <td class="text-center">
+        <div class="flex justify-center flex-col items-center">
+
+        </div>
+      </td>
+      <td class="pl-4">
+        <div class="text-lg text-right">{{digimon.level}}</div>
+      </td>
+    </tr>
+  </thead>
+</table>
+
+
+-->

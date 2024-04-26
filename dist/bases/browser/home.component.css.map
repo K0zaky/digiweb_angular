@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/home/home.component.css"],
+  "sourcesContent": [".container {\n  background-color: grey;\n  padding: 20px;\n}\n\nul {\n  list-style-type: none;\n  padding: 0;\n  margin: 0;\n  background-color: lightgreen;\n}\n\n\nli {\n  text-align: center;\n  margin-bottom: 20px;\n}\n\n\nh1 {\n  font-size: 1.5em;\n  margin-bottom: 5px;\n  color: #333;\n}\n\n\nimg {\n  max-width: 200px;\n  height: auto;\n  border: 3px solid #ccc;\n  border-radius: 10px;\n  transition: transform 0.3s ease;\n}\n\n\nimg:hover {\n  transform: scale(1.1);\n}\n\n\nbody{\n  background-color: rgb(241, 241, 241);\n}\n\n\n\n"],
+  "mappings": ";AAAA,CAAC;AACC,oBAAkB;AAClB,WAAS;AACX;AAEA;AACE,mBAAiB;AACjB,WAAS;AACT,UAAQ;AACR,oBAAkB;AACpB;AAGA;AACE,cAAY;AACZ,iBAAe;AACjB;AAGA;AACE,aAAW;AACX,iBAAe;AACf,SAAO;AACT;AAGA;AACE,aAAW;AACX,UAAQ;AACR,UAAQ,IAAI,MAAM;AAClB,iBAAe;AACf,cAAY,UAAU,KAAK;AAC7B;AAGA,GAAG;AACD,aAAW,MAAM;AACnB;AAGA;AACE,oBAAkB,IAAI,GAAG,EAAE,GAAG,EAAE;AAClC;",
+  "names": []
+}

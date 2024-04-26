@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/dialog-body/dialog-body.component.css"],
+  "sourcesContent": ["/* dialog-body.component.css */\n.dialog {\n  display: none;\n  position: fixed;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  background-color: lime;\n  padding: 20px;\n  border-radius: 5px;\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\n}\n\nbutton {\n  margin-top: 10px;\n}\n"],
+  "mappings": ";AACA,CAAC;AACC,WAAS;AACT,YAAU;AACV,OAAK;AACL,QAAM;AACN,aAAW,UAAU,IAAI,EAAE;AAC3B,oBAAkB;AAClB,WAAS;AACT,iBAAe;AACf,cAAY,EAAE,EAAE,KAAK,KAAK,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE;AACrC;AAEA;AACE,cAAY;AACd;",
+  "names": []
+}
